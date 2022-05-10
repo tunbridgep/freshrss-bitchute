@@ -1,0 +1,28 @@
+
+<form action="<?php echo _url('extension', 'configure', 'e', urlencode($this->getName())); ?>" method="post">
+	<input type="hidden" name="_csrf" value="<?php echo FreshRSS_Auth::csrfToken(); ?>" />
+	<div class="form-group">
+
+		<label class="group-name" for="bitchute_height"><?php echo _t('ext.bitchute_videos.height'); ?></label>
+		<div class="group-controls">
+			<input type="number" id="bitchute_height" name="bitchute_height" value="<?php echo FreshRSS_Context::$user_conf->bitchute_player_height; ?>" min="50" data-leave-validation="1">
+		</div>
+
+		<label class="group-name" for="bitchute_width"><?php echo _t('ext.bitchute_videos.width'); ?></label>
+		<div class="group-controls">
+			<input type="number" id="bitchute_width" name="bitchute_width" value="<?php echo FreshRSS_Context::$user_conf->bitchute_player_width; ?>" min="100" data-leave-validation="1">
+		</div>
+	</div>
+
+	<div class="form-group form-actions">
+		<div class="group-controls">
+			<button type="submit" class="btn btn-important"><?php echo _t('gen.action.submit'); ?></button>
+			<button type="reset" class="btn"><?php echo _t('gen.action.cancel'); ?></button>
+		</div>
+	</div>
+</form>
+
+<p>
+	<?php echo _t('ext.bitchute_videos.updates'); ?>
+	<a href="https://github.com/tunbridgep/freshrss-bitchute" target="_blank">GitHub</a>.
+</p>

@@ -1,0 +1,8 @@
+{
+	"name": "Bitchute embed video",
+	"author": "Paul Tunbridge",
+	"description": "Watch Bitchute videos directly in your feed",
+	"version": "0.1",
+	"entrypoint": "Bitchute",
+	"type": "user"
+}
