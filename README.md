@@ -4,6 +4,10 @@ This FreshRSS extension allows you to directly view [bitchute](http://bitchute.c
 
 To install, simply place the `xExtension-Bitchute` directory in the FreshRSS `./extensions` directory on your server and enable it in the extension panel.
 
+# Example Image
+
+![Bitchute Feed](preview.png)
+
 # Changelog #
 
 0.1
